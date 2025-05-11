@@ -1,0 +1,17 @@
+ <Select onValueChange={handleSelect} value={role}>
+        <SelectTrigger value={role} className="w-[180px]" onReset={() => handleSelect("")}>
+            <SelectValue placeholder="Select a role" />
+        </SelectTrigger>
+        <SelectContent>
+            <SelectGroup>
+            <SelectLabel>Select role to filter</SelectLabel>
+            <SelectItem value="superAdmin">
+                {generateRoleDisplay("superAdmin")}
+            </SelectItem>
+            <SelectItem value="admin">{generateRoleDisplay("admin")}</SelectItem>
+            <SelectItem value="pasutri">
+                {generateRoleDisplay("pasutri")}
+            </SelectItem>
+            </SelectGroup>
+        </SelectContent>
+        </Select>
