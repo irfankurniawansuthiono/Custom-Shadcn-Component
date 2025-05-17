@@ -12,7 +12,19 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/selectWithCloseIcon";
-import { SearchWithSelectProps } from "@/types/Components/SearchWithSelect";
+
+type Option = {
+  label: string;
+  value: string;
+  queryKey?: string;
+};
+
+interface SearchWithSelectProps {
+  placeholder?: string;
+  queryKey?: string;
+  selectKey?: string;
+  selectOptions?: Option[];
+}
 
 export default function SearchWithSelect({
   placeholder = "Search...",
