@@ -1,0 +1,10 @@
+ <SearchWithSelect
+          placeholder="Search by location name.."
+          selectOptions={[
+            { label: "Street Name", value: "sn", queryKey: "sn" },
+            { label: "Building Name", value: "q", queryKey: "q" },
+          ]}
+        />
+
+
+        value and query must be same
